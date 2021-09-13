@@ -4,7 +4,6 @@ import userReducer from "./user.reducers";
 import productReducer from "./product.reducers";
 import orderReducer from "./order.reducers";
 import categoryReducer from "./category.reducers";
-import mapReducer from "./map.reducers";
 
 const rootReducer = combineReducers({
     auth : authReducer,
@@ -12,7 +11,6 @@ const rootReducer = combineReducers({
     product : productReducer,
     category : categoryReducer,
     order : orderReducer,
-    map : mapReducer
 })
 
 export default rootReducer ;

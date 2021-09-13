@@ -17,7 +17,7 @@ exports.requireSignin = (req,res,next) =>{
 
 exports.userMiddleware = (req,res,next)=>{
 
-    if(req.user.role !== ( 'user' || 'admin')){
+    if(req.user.role !== ( 'user' )){
         return res.status(400).json({ mes : 'User Access denied'})
     }
     next();

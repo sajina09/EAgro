@@ -66,7 +66,7 @@ const Category = (props) => {
     return options;
   }
   const handleCategoryImage = (e) => {
-    setCategoryImage(e.target.file[1]);
+    setCategoryImage(e.target.files[0]);
   }
 
   return (
@@ -114,7 +114,7 @@ const Category = (props) => {
 
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={handleClose} style={{background :'#59b791'}}>
             Save Changes
           </Button>
         </Modal.Footer>

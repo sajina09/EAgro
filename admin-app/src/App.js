@@ -10,7 +10,6 @@ import {isUserLoggedIn, login} from './actions';
 import Products from './containers/Products';
 import Orders from './containers/Orders';
 import Category from './containers/Category';
-import Map from './containers/Map';
 
 
 function App() {
@@ -32,7 +31,6 @@ function App() {
           <PrivateRoute path="/category" component={Category} />
           <PrivateRoute path="/products" component={Products } />
           <PrivateRoute path="/orders" component={Orders} />
-          <PrivateRoute path="/map" component={Map} />
           <Route path="/signin" component={Signin} />
           <Route path="/signup" component={Signup} />
         </Switch>
